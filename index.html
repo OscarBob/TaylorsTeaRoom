@@ -12,7 +12,7 @@ body, html {
   font-family: serif, serif;
 }
 
-/* .bgimg {
+.bgimg {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -28,9 +28,9 @@ body, html {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0);
 } 
-*/
+
 
 .menu {
   display: none;
@@ -41,6 +41,25 @@ body, html {
 
 }
 
+.w3-button {
+  background-color: rgba(183, 199, 188, 1);
+
+}
+
+header div {
+  border-radius: 25% 25% 0% 0%;
+  margin-left:10%; 
+  margin-top:5%; 
+  min-height: 90%; 
+  min-width:40%; 
+  background-color: rgba(173, 189, 178, 1); 
+  position: absolute;
+}
+
+h1 {
+  font-size: 90px;
+}
+
 
 </style>
 </head>
@@ -48,37 +67,32 @@ body, html {
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-padding w3-light-grey">
+  <div class="w3-row w3-padding" style="background-color: rgba(173, 189, 178, 1);">
     <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-light-grey">HOME</a>
+      <a href="#" class="w3-button w3-block">HOME</a>
     </div>
     <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-light-grey w3-text-amber">ABOUT</a>
+      <a href="#about" class="w3-button w3-block">ABOUT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-light-grey">MENU</a>
+      <a href="#menu" class="w3-button w3-block">MENU</a>
     </div>
     <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-light-grey">WHERE</a>
+      <a href="#where" class="w3-button w3-block">WHERE</a>
     </div>
   </div>
 </div>
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 6am to 5pm</span>
+  <div class="w3-text-black w3-padding-large w3-center">
+    <h1>Taylor & Moor</h1>
   </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-black"  style="font-size:90px; position: relative;">Taylor & Moor<br>Tea Rooms</span>
-  </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">15 Adr street, 5015</span>
-  </div>
+  
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-large" style="background-color: rgba(173, 189, 178, 0.75);">
+<div class="w3-large" style="background-color: rgba(173, 189, 178, 1);">
 
 <!-- About Container -->
 <div class="w3-container" id="about">
