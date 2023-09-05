@@ -4,20 +4,19 @@
 <title>Taylor & Moor Ashburton</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./w3.css"> <!-- https://www.w3schools.com/w3css/4/w3.css -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-body, html {
+body, html, h1, h2, h3, h4{
   height: 100%;
   font-family: serif, serif;
 }
 
 .bgimg {
-  position: relative;
   background-position: center;
   background-size: cover;
   background-image: url("./images/Background.jpg");
-  min-height: 75%;
+  min-height: 80%;
   
 }
 
@@ -47,18 +46,22 @@ body, html {
 
 }
 
+.links {
+  width:20%;
+}
+
 header div {
-  border-radius: 25% 25% 0% 0%;
+  border-radius: 15% 15% 0% 0%;
   margin-left:10%; 
-  margin-top:5%; 
-  min-height: 90%; 
-  min-width:40%; 
+  margin-right:10%;
+  Margin-top:128px; 
+  min-width:40%;
   background-color: rgba(173, 189, 178, 1); 
   position: absolute;
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 80px;
 }
 
 
@@ -68,28 +71,37 @@ h1 {
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-padding" style="background-color: rgba(173, 189, 178, 1);">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">
+  <div class="w3-row w3-padding" style="background-color: rgba(153, 169, 158, 1);">
+    <div class="w3-col links">
+      <a href="#" class="w3-button w3-block">*Put logo here*
         <!-- <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"> -->
       </a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col links">
       <a href="#about" class="w3-button w3-block">ABOUT</a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col links">
       <a href="#menu" class="w3-button w3-block">MENU</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block">WHERE</a>
+    <div class="w3-col links">
+      <a href="#where" class="w3-button w3-block">CONTACT</a>
+    </div>
+    <div class="w3-col links">
+      <a href="#extra" class="w3-button w3-block">SUPPLIERS</a>
     </div>
   </div>
 </div>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container" id="home">
-  <div class="w3-text-black w3-padding-large w3-center">
+<header class="bgimg" id="home">
+  <div class="w3-text-black w3-center">
     <h1>Taylor & Moor</h1>
+    <h2>Ashburton Tea Room</h2>
+    <h3 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Opening hours:</span></h3>
+    <h3>10:00 - 16:30</h3>
+    <h3 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Location:</span></h3>
+    <h3>SomeAddress BA5 3FR</h3>
+    <h4>Google maps below *arrow-down icon*</h4>
   </div>
   
 </header>
@@ -97,10 +109,13 @@ h1 {
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-large" style="background-color: rgba(173, 189, 178, 1);">
 
+<div class="w3-container">
+  <h1 class="w3-center w3-red w3-content" style="margin-top:200px;">*placeholder for google maps widget*</h1>
+</div>
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">A bit about us</span></h2>
     <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
     <div class="w3-panel w3-leftbar w3-light-grey">
@@ -108,42 +123,27 @@ h1 {
       <p>Chef, Coffeeist and Owner: Liam Brown</p>
     </div>
     <img src="./images/1.png" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+    <h1 class="w3-red">*placeholder for instagram and maybe trip advisor*</h1>
   </div>
 </div>
 
 
 <div class="w3-content">
+<h3 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Owners</span></h3>
 <div class="w3-row-padding w3-center">
-  <div class="w3-col l3 m6 w3-margin-bottom">
+  <div class="w3-col l6 m6 w3-margin-bottom">
     <img src="./images/Staff1.webp" alt="John" style="width:100%">
-    <h3>John Doe</h3>
+    <h3>Charlie</h3>
     <p class="w3-opacity">CEO & Founder</p>
     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
   </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
+  <div class="w3-col l6 m6 w3-margin-bottom">
     <img src="./images/Staff1.webp" alt="Jane" style="width:100%">
-    <h3>Jane Doe</h3>
+    <h3>George</h3>
     <p class="w3-opacity">Architect</p>
     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
   </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <img src="./images/Staff1.webp" alt="Mike" style="width:100%">
-    <h3>Mike Ross</h3>
-    <p class="w3-opacity">Architect</p>
-    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-  </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <img src="./images/Staff1.webp" alt="Dan" style="width:100%">
-    <h3>Dan Star</h3>
-    <p class="w3-opacity">Architect</p>
-    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-  </div>
+  
 </div>
 </div>
 
@@ -152,18 +152,21 @@ h1 {
 <div class="w3-container" id="menu">
   <div class="w3-content">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+    <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Menu</span></h2>
   
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'drink');" id="myLink">
+        <div class="w3-col s4 tablink">Beverages</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'savoury');">
+        <div class="w3-col s4 tablink">Savoury</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'sweet');">
+        <div class="w3-col s4 tablink">Sweet</div>
       </a>
     </div>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+    <div id="drink" class="w3-container menu w3-padding-48 w3-card">
       <h5>Bread Basket</h5>
       <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
     
@@ -180,7 +183,24 @@ h1 {
       <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
     </div>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+    <div id="savoury" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>
+
+    <div id="sweet" class="w3-container menu w3-padding-48 w3-card">
       <h5>Coffee</h5>
       <p class="w3-text-grey">Regular coffee 2.50</p><br>
     
@@ -202,19 +222,17 @@ h1 {
 
 <!-- Contact/Area Container -->
 <div class="w3-container" id="where" style="padding-bottom:32px;">
-  <div class="w3-content">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>Find us at some address at some place.</p>
-    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-    </form>
+  <div class="w3-content w3-center">
+    <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Contact</span></h2>
+    <h3>Not sure what contact information I should add</h3>
+  </div>
+</div>
+
+<!-- Supplier/Area Container -->
+<div class="w3-container" id="extra" style="padding-bottom:32px;">
+  <div class="w3-content w3-center">
+    <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Supplier</span></h2>
+    <h3>Not sure what supplier info I should add. Although I am imagining a short paragraph introducing the fact we have suppliers and then a table/bullet-points of suppliers.</h3>
   </div>
 </div>
 
